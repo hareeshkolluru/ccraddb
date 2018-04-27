@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml2/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<title> Motorola Converged Computing </title> 
+<meta name="Author" content="Sethu Hareesh Kolluru" />
+<link rel="stylesheet" media="all" type="text/css" href="style.css" />   
+<link rel="stylesheet" media="all" type="text/css" href="extJS/resources/css/ext-all.css" />  
+<script type="text/javascript" src="extJS/ext-all-debug-w-comments.js"></script>
+
+
+
+<body>
+
+<form action="<?php echo $PHP_SELF;?>" method="post" name="form2">
+First name: <input type="text" name="firstname" /><br />
+Last name: <input type="text" name="lastname" />
+<select name="columnName">		
+<option value="saab">saab</option>
+<option value="volvo abcdefghijkl">volvo_ABCDEFGH</option>		
+</select>
+
+<input name="btnSubmit" type="submit" value="Display Graph" id="styleswitcher2">
+		</form>	
+<p><b>Note:</b> The form itself is not visible. Also note that the default width of a text field is 20 characters.</p>
+
+<?php
+echo "hello";
+
+echo $_POST["columnName"];
+
+?>
+
+
+</body>
+</html>

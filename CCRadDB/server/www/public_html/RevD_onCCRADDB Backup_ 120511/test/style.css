@@ -1,0 +1,327 @@
+body {/*font-size:76%;*/ font-family:Helvetica, Arial,Verdana, Lucida, Geneva,  sans-serif; background:#ffffff; word-wrap:break-word;}
+
+#header {background:#36332d;font-family:Helvetica, Arial,Verdana, Lucida, Geneva,  sans-serif;
+		background: #171818;
+		border-bottom: 1px solid #121213;
+		/*height: 35px;*/}
+		
+#header-center {
+	background:url('header_2_withshine.jpg') no-repeat;
+	height: 100px;
+	width:1250px;
+	margin:auto;
+	
+}
+#zen {
+	background: #4c4c4e url(/cssimg/sprites-bg.png) repeat-x 0 -102px;
+	height: 5px;
+}
+
+#outer1 {float:left; width:0%; background:#b0b0b0;padding:10px 0 0 0;/*c0c0c0;z-index:4;overflow: hidden;position:fixed;*/}
+#outer2 {float:left; width:100%; background:#fff;/*border-left:2px solid black; border-right:2px solid black;*/}
+#outer3 {float:right; width:0%; background:#b0b0b0;/*z-index:4;overflow: hidden;position:fixed;*/}
+#outer1, #outer2, #outer3 {padding-bottom:32767px; margin-bottom:-32767px;}
+
+#wrapper {overflow:hidden; background:#c0c0c0;margin: /*125px*/ 0 auto;
+	position: relative /*fixed*/;
+	width: /*100%*/ 1250px;}
+
+#footer {clear:both; background:/*#455c5a#4a392f*/#1f2124;color:#ccc;font-size: 11px;overflow: hidden;/*position:fixed;*/ margin:0; bottom:-1px; display:block; width:100%; height:50px;text-align:right; z-index:4;}
+
+h1 {font-size:24px; margin:0; padding:0px 0px; color:#000;}
+h3 {font-size:18px; margin:0; padding:8px 0px;}
+
+.content {padding:10px 10px;font-size:14px;overflow:auto; position:relative; z-index:3;}
+.content h1 {font-size:24px; margin:0; padding:10px 0px; color:#black;}
+.content h3 {font-size:18px; margin:0; padding:0px 0px;color:#f6f6f6;}
+
+
+p {font-size:14px; line-height:1.5em; margin:0; padding:5px 0;}
+
+#footer p
+
+#header p {color:/*#bcae9d;*/#ccc;}
+
+#footer a {color:#bcae9d;}
+
+#footer a:hover {text-decoration:none;font-family:Helvetica, Arial,Verdana, Lucida, Geneva,  sans-serif;}
+
+#left{width:25%;float:left;}
+#right{width:16%;float:right;}
+
+#optionsmenu{background:#ccc;float:left; width:100%;margin:0 auto;};
+/***************************************************menu***********************************************************/
+
+#modernbricksmenu{
+padding: 0;
+width: 100%;
+background: transparent;
+voice-family: "\"}\"";
+voice-family: inherit;
+}
+
+#modernbricksmenu ul{
+font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+font-size: 14px;
+margin:0;
+margin-left:0; /*margin between first menu item and left browser edge*/
+padding: 0;
+list-style: none;
+}
+
+#modernbricksmenu li{
+float: left;
+display: inline;
+margin: 0px 2px 0px 0;
+padding: 0;
+text-transform:uppercase;
+}
+
+#modernbricksmenu a,b{
+display: block;
+color: white;
+margin: 0 1px 0 0; /*Margin between each menu item*/
+padding: 15px 30px;
+text-decoration: none;
+letter-spacing: 1px;
+background-color: black; /*Default menu color*/
+border-bottom: 1px solid white;
+font-weight:normal
+}
+
+#modernbricksmenu a:hover{
+background-color: gray; /*Menu hover bgcolor*/
+}
+
+#modernbricksmenu #current a{ /*currently selected tab*/
+background-color: #1e4f77;/*#D25A0B; /*Brown color theme*/ 
+border-color: #1e4f77;/*#D25A0B; /*Brown color theme*/ 
+}
+
+#modernbricksmenu li ul {
+/*display: none;*/
+visibility:hidden;
+position: absolute;
+top:48px;
+margin-left:-1px;
+width:225px;
+z-index:100;
+}
+
+#modernbricksmenu li ul  li{
+margin-top:2px;
+display:block;
+float:none;
+padding:0px;
+width:225px;
+}
+
+
+#modernbricksmenu li:hover ul, li.over ul,li:hover li {
+display: block;
+visibility:visible; 
+}
+
+#modernbricksmenuline{
+clear: both;
+padding: 0;
+width: 100%;
+height: 5px;
+line-height: 5px;
+background: #1e4f77;/*#D25A0B; /*Brown color theme*/ 
+}
+
+/************************checkbox************/
+
+.checkbox, .radio {
+  width: 19px;
+  height: 25px;
+  padding: 0 5px 0 0;
+  background: url(checkbox.gif) no-repeat;
+  display: block;
+  clear: left;
+  float: left;
+}
+.radio {
+  background: url(radio.gif) no-repeat;
+}
+.select {
+  position: absolute;
+  width: 158px;
+  height: 21px;
+  padding: 0 24px 0 8px;
+  color: #fff;
+  font: 14px/21px arial,sans-serif;
+  background: url(select.gif) no-repeat;
+  overflow: hidden;
+}
+
+
+
+/********************************horizontal menu******************/
+#styleswitcher2 {
+	position: relative;
+	left: 0;
+	top: 0;
+	background-color: #36332D;
+	margin: 0.5% 0 2%;
+	padding:1%;
+	font: 14px/21px arial,sans-serif;
+	color: #fff;
+	float:right;
+	}
+	
+	
+	
+
+#styleswitcher {
+	position: relative;
+	left: 0;
+	top: 0;
+	background-color: #36332D;
+	width: 100%;
+	margin: 0.8em 0 0 0 ;
+}
+#styleswitcher ul {
+	margin: 0;
+	padding: 0 0 0 15%;
+	background-color: #36332D;
+	height: 36px;
+}
+#styleswitcher li {
+	display: block;
+	float: left;
+	list-style-type: none;
+	padding: 5px 1em;
+	height: 32px;
+	border: none;
+	border-left: 1px solid #7D796F;
+	border-right: 1px solid #454440;
+	margin: 0;
+	background: #5D584B;
+}
+
+#styleswitcher li.active {
+	border-bottom: none;
+	font-weight: bold;
+	background: white;
+	height: 32px;
+}
+#styleswitcher a {
+	text-decoration: none;
+	color: white;
+	text-shadow: 0 -1px 1px #000000;
+}
+#styleswitcher li:hover {
+	
+	background-color: #7D796F;
+}
+#styleswitcher li.active a {
+	color: #333;
+	text-shadow: none;
+}
+
+/********************************************************************************************************************************************/
+#hor-minimalist-a
+{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+	background: #fff;
+	margin: 45px;
+	width: 480px;
+	border-collapse: collapse;
+	text-align: left;
+}
+#hor-minimalist-a th
+{
+	font-size: 14px;
+	font-weight: normal;
+	color: #039;
+	padding: 10px 8px;
+	border-bottom: 2px solid #6678b1;
+}
+#hor-minimalist-a td
+{
+	color: #669;
+	padding: 9px 8px 0px 8px;
+}
+#hor-minimalist-a tbody tr:hover td
+{
+	color: #009;
+}
+
+/********************************************************************************************************************************************/
+#hor-minimalist-b
+{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 14px;
+	background: #fff;
+	margin: 3%;
+	width: 96%;
+	border-collapse: collapse;
+	text-align: left;
+}
+#hor-minimalist-b th
+{
+	font-size: 14px;
+	font-weight: normal;
+	color: #039;
+	padding: 10px 8px;
+	border-bottom: 2px solid #6678b1;
+}
+#hor-minimalist-b td
+{
+	border-bottom: 1px solid #ccc;
+	color: #669;
+	padding: 6px 8px;
+}
+#hor-minimalist-b tbody tr:hover td
+{
+	color: #009;
+}
+
+/*********************************************************************/
+
+
+#underlay{
+	display:none;
+	position:fixed;
+	top:200px;
+	left:300px;
+	width:400px;
+	height:600px;
+	background-color:#777;
+	-moz-opacity:0.5;
+	opacity:.99;
+	filter:alpha(opacity=50);
+	color:#fff;	
+}
+#lightbox{
+	display:none;
+	position:absolute;
+	top:0px;
+	left:25%;
+	width:50%;
+	height:200px;
+	background-color:#000;
+}
+
+
+
+
+/*********************************************************************/
+form fieldset {
+  /* clear: both; note that this clear causes inputs to break to left in ie5.x mac, commented out */
+  border-color: #111;
+  border-width: 2px;
+  border-style: solid;
+  padding: 10px;        /* padding in fieldset support spotty in IE */
+  margin: 0;
+}
+
+form fieldset legend {
+	font-size:1.1em; /* bump up legend font size, not too large or it'll overwrite border on left */
+                       /* be careful with padding, it'll shift the nice offset on top of border  */
+}
+
+

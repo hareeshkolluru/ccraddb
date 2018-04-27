@@ -1,0 +1,74 @@
+Installing Apache HTTP 2.0 server with
+ DomainName =    mot-mobility.com
+ ServerName =    ccraddb.dsa.mot-mobility.com
+ ServerAdmin =   sethu@ccraddb.mot-mobility.com
+ ServerPort =    80
+ ServerSslPort = 80
+ ServerRoot =    D:/Motorola/Research/CCRadDB/server/apache
+Rewrote D:/Motorola/Research/CCRadDB/server/apache/conf/original/extra/httpd-autoindex.conf.in
+ to D:/Motorola/Research/CCRadDB/server/apache/conf/original/extra/httpd-autoindex.conf
+Successfully removed D:\Motorola\Research\CCRadDB\server\apache\conf\original\extra\httpd-autoindex.conf.in
+Rewrote D:/Motorola/Research/CCRadDB/server/apache/conf/original/extra/httpd-vhosts.conf.in
+ to D:/Motorola/Research/CCRadDB/server/apache/conf/original/extra/httpd-vhosts.conf
+Successfully removed D:\Motorola\Research\CCRadDB\server\apache\conf\original\extra\httpd-vhosts.conf.in
+Rewrote D:/Motorola/Research/CCRadDB/server/apache/conf/original/extra/httpd-default.conf.in
+ to D:/Motorola/Research/CCRadDB/server/apache/conf/original/extra/httpd-default.conf
+Successfully removed D:\Motorola\Research\CCRadDB\server\apache\conf\original\extra\httpd-default.conf.in
+Rewrote D:/Motorola/Research/CCRadDB/server/apache/conf/original/extra/httpd-manual.conf.in
+ to D:/Motorola/Research/CCRadDB/server/apache/conf/original/extra/httpd-manual.conf
+Successfully removed D:\Motorola\Research\CCRadDB\server\apache\conf\original\extra\httpd-manual.conf.in
+Rewrote D:/Motorola/Research/CCRadDB/server/apache/conf/original/extra/httpd-mpm.conf.in
+ to D:/Motorola/Research/CCRadDB/server/apache/conf/original/extra/httpd-mpm.conf
+Successfully removed D:\Motorola\Research\CCRadDB\server\apache\conf\original\extra\httpd-mpm.conf.in
+Rewrote D:/Motorola/Research/CCRadDB/server/apache/conf/original/extra/httpd-info.conf.in
+ to D:/Motorola/Research/CCRadDB/server/apache/conf/original/extra/httpd-info.conf
+Successfully removed D:\Motorola\Research\CCRadDB\server\apache\conf\original\extra\httpd-info.conf.in
+Rewrote D:/Motorola/Research/CCRadDB/server/apache/conf/original/extra/httpd-dav.conf.in
+ to D:/Motorola/Research/CCRadDB/server/apache/conf/original/extra/httpd-dav.conf
+Successfully removed D:\Motorola\Research\CCRadDB\server\apache\conf\original\extra\httpd-dav.conf.in
+Rewrote D:/Motorola/Research/CCRadDB/server/apache/conf/original/extra/httpd-languages.conf.in
+ to D:/Motorola/Research/CCRadDB/server/apache/conf/original/extra/httpd-languages.conf
+Successfully removed D:\Motorola\Research\CCRadDB\server\apache\conf\original\extra\httpd-languages.conf.in
+Rewrote D:/Motorola/Research/CCRadDB/server/apache/conf/original/httpd.conf.in
+ to D:/Motorola/Research/CCRadDB/server/apache/conf/original/httpd.conf
+Successfully removed D:\Motorola\Research\CCRadDB\server\apache\conf\original\httpd.conf.in
+Rewrote D:/Motorola/Research/CCRadDB/server/apache/conf/original/extra/httpd-userdir.conf.in
+ to D:/Motorola/Research/CCRadDB/server/apache/conf/original/extra/httpd-userdir.conf
+Successfully removed D:\Motorola\Research\CCRadDB\server\apache\conf\original\extra\httpd-userdir.conf.in
+Rewrote D:/Motorola/Research/CCRadDB/server/apache/conf/original/extra/httpd-ssl.conf.in
+ to D:/Motorola/Research/CCRadDB/server/apache/conf/original/extra/httpd-ssl.conf
+Successfully removed D:\Motorola\Research\CCRadDB\server\apache\conf\original\extra\httpd-ssl.conf.in
+Rewrote D:/Motorola/Research/CCRadDB/server/apache/conf/original/extra/httpd-multilang-errordoc.conf.in
+ to D:/Motorola/Research/CCRadDB/server/apache/conf/original/extra/httpd-multilang-errordoc.conf
+Successfully removed D:\Motorola\Research\CCRadDB\server\apache\conf\original\extra\httpd-multilang-errordoc.conf.in
+Duplicated D:/Motorola/Research/CCRadDB/server/apache/conf/original/magic
+ to D:/Motorola/Research/CCRadDB/server/apache/conf/magic
+Duplicated D:/Motorola/Research/CCRadDB/server/apache/conf/original/extra/httpd-autoindex.conf
+ to D:/Motorola/Research/CCRadDB/server/apache/conf/extra/httpd-autoindex.conf
+Duplicated D:/Motorola/Research/CCRadDB/server/apache/conf/original/extra/httpd-vhosts.conf
+ to D:/Motorola/Research/CCRadDB/server/apache/conf/extra/httpd-vhosts.conf
+Duplicated D:/Motorola/Research/CCRadDB/server/apache/conf/original/extra/httpd-default.conf
+ to D:/Motorola/Research/CCRadDB/server/apache/conf/extra/httpd-default.conf
+Duplicated D:/Motorola/Research/CCRadDB/server/apache/conf/original/mime.types
+ to D:/Motorola/Research/CCRadDB/server/apache/conf/mime.types
+Duplicated D:/Motorola/Research/CCRadDB/server/apache/conf/original/charset.conv
+ to D:/Motorola/Research/CCRadDB/server/apache/conf/charset.conv
+Duplicated D:/Motorola/Research/CCRadDB/server/apache/conf/original/extra/httpd-manual.conf
+ to D:/Motorola/Research/CCRadDB/server/apache/conf/extra/httpd-manual.conf
+Duplicated D:/Motorola/Research/CCRadDB/server/apache/conf/original/extra/httpd-mpm.conf
+ to D:/Motorola/Research/CCRadDB/server/apache/conf/extra/httpd-mpm.conf
+Duplicated D:/Motorola/Research/CCRadDB/server/apache/conf/original/extra/httpd-info.conf
+ to D:/Motorola/Research/CCRadDB/server/apache/conf/extra/httpd-info.conf
+Duplicated D:/Motorola/Research/CCRadDB/server/apache/conf/original/extra/httpd-dav.conf
+ to D:/Motorola/Research/CCRadDB/server/apache/conf/extra/httpd-dav.conf
+Duplicated D:/Motorola/Research/CCRadDB/server/apache/conf/original/extra/httpd-languages.conf
+ to D:/Motorola/Research/CCRadDB/server/apache/conf/extra/httpd-languages.conf
+Duplicated D:/Motorola/Research/CCRadDB/server/apache/conf/original/httpd.conf
+ to D:/Motorola/Research/CCRadDB/server/apache/conf/httpd.conf
+Duplicated D:/Motorola/Research/CCRadDB/server/apache/conf/original/extra/httpd-userdir.conf
+ to D:/Motorola/Research/CCRadDB/server/apache/conf/extra/httpd-userdir.conf
+Duplicated D:/Motorola/Research/CCRadDB/server/apache/conf/original/extra/httpd-ssl.conf
+ to D:/Motorola/Research/CCRadDB/server/apache/conf/extra/httpd-ssl.conf
+Duplicated D:/Motorola/Research/CCRadDB/server/apache/conf/original/extra/httpd-multilang-errordoc.conf
+ to D:/Motorola/Research/CCRadDB/server/apache/conf/extra/httpd-multilang-errordoc.conf
+Successfully removed D:\Motorola\Research\CCRadDB\server\apache\conf\original\installwinconf.awk

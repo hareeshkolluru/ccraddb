@@ -1,0 +1,441 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml2/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<title> Motorola Converged Computing </title> 
+<meta name="Author" content="Sethu Hareesh Kolluru" />
+<link rel="stylesheet" media="all" type="text/css" href="style.css" />   
+<link rel="stylesheet" media="all" type="text/css" href="extJS/resources/css/ext-all.css" />  
+<script type="text/javascript" src="extJS/ext-all-debug-w-comments.js"></script>
+
+
+<!-- 1. Add these JavaScript inclusions in the head of your page -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script type="text/javascript" src="Highcharts/js/highcharts.js"></script>
+		
+		<!-- 1a) Optional: add a theme file -->
+		<!--
+			<script type="text/javascript" src="../js/themes/gray.js"></script>
+		-->
+		
+		<!-- 1b) Optional: the exporting module -->
+		<script type="text/javascript" src="Highcharts/js/modules/exporting.js"></script>
+		
+		
+		<!-- 2. Add the JavaScript to initialize the chart on document ready -->
+		<script type="text/javascript">
+		
+			var chart1;
+			$(document).ready(function() {
+				chart1 = new Highcharts.Chart({
+					chart: {
+						renderTo: 'container-1',
+						defaultSeriesType: 'line',
+						marginRight: 130,
+						marginBottom: 25
+					},
+					title: {
+						text: 'Monthly Average Temperature',
+						x: -20 //center
+					},
+					subtitle: {
+						text: 'Source: WorldClimate.com',
+						x: -20
+					},
+					xAxis: {
+						categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 
+							'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+					},
+					yAxis: {
+						title: {
+							text: 'Temperature (�C)'
+						},
+						plotLines: [{
+							value: 0,
+							width: 1,
+							color: '#808080'
+						}]
+					},
+					tooltip: {
+						formatter: function() {
+				                return '<b>'+ this.series.name +'</b><br/>'+
+								this.x +': '+ this.y +'�C';
+						}
+					},
+					legend: {
+						layout: 'vertical',
+						align: 'right',
+						verticalAlign: 'top',
+						x: -10,
+						y: 100,
+						borderWidth: 0
+					},
+					series: [{
+						name: 'Tokyo',
+						data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+					}, {
+						name: 'New York',
+						data: [-0.2, 0.8, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
+					}, {
+						name: 'Berlin',
+						data: [-0.9, 0.6, 3.5, 8.4, 13.5, 17.0, 18.6, 17.9, 14.3, 9.0, 3.9, 1.0]
+					}, {
+						name: 'London',
+						data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
+					}]
+				});
+				
+				
+			});
+			
+			
+			
+			var chart2;
+			$(document).ready(function() {
+				chart2 = new Highcharts.Chart({
+					chart: {
+						renderTo: 'container-2',
+						defaultSeriesType: 'line',
+						marginRight: 130,
+						marginBottom: 25
+					},
+					title: {
+						text: 'Monthly Average Temperature',
+						x: -20 //center
+					},
+					subtitle: {
+						text: 'Source: WorldClimate.com',
+						x: -20
+					},
+					xAxis: {
+						categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 
+							'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+					},
+					yAxis: {
+						title: {
+							text: 'Temperature (у)'
+						},
+						plotLines: [{
+							value: 0,
+							width: 1,
+							color: '#808080'
+						}]
+					},
+					tooltip: {
+						formatter: function() {
+				                return '<b>'+ this.series.name +'</b><br/>'+
+								this.x +': '+ this.y +'у';
+						}
+					},
+					legend: {
+						layout: 'vertical',
+						align: 'right',
+						verticalAlign: 'top',
+						x: -10,
+						y: 100,
+						borderWidth: 0
+					},
+					series: [{
+						name: 'Tokyo',
+						data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+					}, {
+						name: 'New York',
+						data: [-0.2, 0.8, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
+					}, {
+						name: 'Berlin',
+						data: [-0.9, 0.6, 3.5, 8.4, 13.5, 17.0, 18.6, 17.9, 14.3, 9.0, 3.9, 1.0]
+					}, {
+						name: 'London',
+						data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
+					}]
+				});
+				
+				
+			});
+			
+			
+			
+			var chart3;
+			$(document).ready(function() {
+				chart3 = new Highcharts.Chart({
+					chart: {
+						renderTo: 'container-3',
+						defaultSeriesType: 'line',
+						marginRight: 130,
+						marginBottom: 25
+					},
+					title: {
+						text: 'Monthly Average Temperature',
+						x: -20 //center
+					},
+					subtitle: {
+						text: 'Source: WorldClimate.com',
+						x: -20
+					},
+					xAxis: {
+						categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 
+							'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+					},
+					yAxis: {
+						title: {
+							text: 'Temperature (у)'
+						},
+						plotLines: [{
+							value: 0,
+							width: 1,
+							color: '#808080'
+						}]
+					},
+					tooltip: {
+						formatter: function() {
+				                return '<b>'+ this.series.name +'</b><br/>'+
+								this.x +': '+ this.y +'у';
+						}
+					},
+					legend: {
+						layout: 'vertical',
+						align: 'right',
+						verticalAlign: 'top',
+						x: -10,
+						y: 100,
+						borderWidth: 0
+					},
+					series: [{
+						name: 'Tokyo',
+						data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+					}, {
+						name: 'New York',
+						data: [-0.2, 0.8, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
+					}, {
+						name: 'Berlin',
+						data: [-0.9, 0.6, 3.5, 8.4, 13.5, 17.0, 18.6, 17.9, 14.3, 9.0, 3.9, 1.0]
+					}, {
+						name: 'London',
+						data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
+					}]
+				});
+				
+				
+			});
+			
+			
+			var chart4;
+			$(document).ready(function() {
+				chart4 = new Highcharts.Chart({
+					chart: {
+						renderTo: 'container-4',
+						defaultSeriesType: 'line',
+						marginRight: 130,
+						marginBottom: 25
+					},
+					title: {
+						text: 'Monthly Average Temperature',
+						x: -20 //center
+					},
+					subtitle: {
+						text: 'Source: WorldClimate.com',
+						x: -20
+					},
+					xAxis: {
+						categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 
+							'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+					},
+					yAxis: {
+						title: {
+							text: 'Temperature (у)'
+						},
+						plotLines: [{
+							value: 0,
+							width: 1,
+							color: '#808080'
+						}]
+					},
+					tooltip: {
+						formatter: function() {
+				                return '<b>'+ this.series.name +'</b><br/>'+
+								this.x +': '+ this.y +'у';
+						}
+					},
+					legend: {
+						layout: 'vertical',
+						align: 'right',
+						verticalAlign: 'top',
+						x: -10,
+						y: 100,
+						borderWidth: 0
+					},
+					series: [{
+						name: 'Tokyo',
+						data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+					}, {
+						name: 'New York',
+						data: [-0.2, 0.8, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
+					}, {
+						name: 'Berlin',
+						data: [-0.9, 0.6, 3.5, 8.4, 13.5, 17.0, 18.6, 17.9, 14.3, 9.0, 3.9, 1.0]
+					}, {
+						name: 'London',
+						data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
+					}]
+				});
+				
+				
+			});
+				
+		</script>
+
+
+</head> 
+ 
+<body> 
+	
+		
+			<div id="head">			
+				<div id="header-top">
+				</div>
+				<div id="header-bottom">
+				<div class="wrap-1200px">
+				<div class="content">
+				<h1> CC Radiated Database </h1>
+				</div>
+				</div>
+				</div>
+				<div id="zen">			
+				</div>
+			</div>
+	
+			<!--<div id="styleswitcher">
+				<ul>
+					<li><a href="/demo/line-basic">All GSM</a></li>
+					<li><a href="/demo/line-basic/grid">GSM 850</a></li>
+					<li><a href="/demo/line-basic/skies">GSM 900</a></li>
+					<li><a href="/demo/line-basic/gray">GSM 1800</a></li>
+					<li><a href="/demo/line-basic/dark-blue">GSM 1900</a></li>
+					<li><a href="/demo/line-basic/dark-green">All WCDMA</a></li>
+					<li><a href="/demo/line-basic">WCDMA 850</a></li>
+					<li><a href="/demo/line-basic/grid">WCDMA 900</a></li>
+					<li><a href="/demo/line-basic/skies">WCDMA 1800</a></li>
+					<li><a href="/demo/line-basic/gray">WCDMA 1900</a></li>
+					<li><a href="/demo/line-basic/dark-blue">WCDMA 2100</a></li>
+					<li><a href="/demo/line-basic/dark-green">LTE Band</a></li>
+				</ul>
+				</div>-->
+		<!--</div>--> <!-- end header -->
+
+
+
+		<div id="wrapper">
+		
+		<div id="page-title">
+        <h1>Home</h1>
+        </div>
+
+			<div id="outer1">				
+						<div id="navcontainer">
+						<ul id="navlist">
+						<li><b>Database Operations</b></li>
+						<li id="active"><a href="database_createtestplan.php" id="current">Create a testplan from template</a></li>
+						<li><a href="database_uploaddata.php">Upload data into the database</a></li>
+						<li><a href="database_downloaddata.php">Download data from the database</a></li>
+						<li><a href="database_editdata.php">Edit/Update data in the database</a></li>
+						<li><a href="database_writesql.php">Write SQL query to interact with database</a></li>
+						<li><b> Data on One Unit</b><li>
+						<li id="active"><a href="#" id="current">Power</a></li>
+						<li><a href="#">Sensitivity</a></li>
+						<li><a href="radiateddesenseoneunit.html">SPTIS</a></li>
+						<li><b>Compare Multiple Units</b></li>
+						<li><a href="#">Power</a></li>
+						<li><a href="#">Sensitivity</a></li>
+						<li><a href="radiateddesensemultipleunit.html">SPTIS</a></li>
+						<li><b>Histograms</b></li>
+						<li><a href="#">Power</a></li>
+						<li><a href="#">Sensitivity</a></li>
+						<li><a href="#">SPTIS</a></li>
+						</ul>
+						</div>
+			</div>
+
+
+
+
+
+			<div id="outer2">
+			
+			
+			
+
+				<div class="content">			
+				
+				
+					<br/>	
+				
+				
+				
+				<p> Select your Hardware Rev 
+				<select name="d" class="styled">
+				  <option value="1">P1A</option>
+				  <option value="1">P1B</option>
+				  <option value="1">P2A</option>
+				  <option value="1">P2B</option>
+				  <option value="1">P3A</option>
+				  <option value="1">P3B</option>
+				</select>
+				
+				 Select your Unit No 
+				<select name="d" class="styled">
+				  <option value="1">LHBA24001</option>
+				  <option value="1">LHBA24001</option>
+				  <option value="1">LHBA24001</option>
+				  <option value="1">LHBA24001</option>
+				  <option value="1">LHBA24001</option>
+				  <option value="1">LHBA24001</option>
+				</select>
+				</p>
+
+					</div>
+
+					<div class="content">
+				
+					<!-- 3. Add the container -->
+					<div id="container-1" style="width: 700px; height: 500px; margin: 1.5em; float:left"></div>
+													
+
+				
+	
+
+			
+
+			<p>		<input type="checkbox" name="a" class="styled" /> Display Off </p>
+			<p>		<input type="checkbox" name="a" class="styled" /> Display On </p>
+			<p>		<input type="checkbox" name="a" class="styled" /> Front Facing Camera On</p>
+			<p>		<input type="checkbox" name="a" class="styled" /> Rear Facing Camera On</p>
+			<p>		<input type="checkbox" name="a" class="styled" /> uSD card read/write On</p>
+			<p>		<input type="checkbox" name="a" class="styled" /> USB On</p>
+			<p>		<input type="checkbox" name="a" class="styled" /> HDMI On</p>
+
+						
+
+</div> <!-- end content -->
+
+					
+			</div> <!-- end outer2 -->
+
+
+
+
+
+
+		</div><!-- end #wrapper -->
+
+
+
+<div id="footer">
+	<div class="content">
+	<div class="wrap-1200px">			
+	<p>2011 Sethu Hareesh Kolluru &copy; All Rights Reserved </a></p>
+	</div>
+	</div>
+</div> <!-- end footer -->
+
+</body> 
+</html> 

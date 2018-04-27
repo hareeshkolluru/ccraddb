@@ -1,0 +1,28 @@
+adv_csv Object
+(
+    [string] => "Column1","Column2","Column3","Column4"
+"R1C1","R1C2","R1C3","R1C4"
+"R2C1","R2C2","R2C3","blahblah"
+"R3C1",,"R3C3","R3C4"
+
+    [csv_head] => 
+    [csv_head_count] => 4
+    [csv_head_name] => Array
+        (
+            [0] => Column1
+            [1] => Column2
+            [2] => Column3
+            [3] => Column4
+        )
+
+    [csv_head_len] => Array
+        (
+            [0] => 4
+            [1] => 4
+            [2] => 4
+            [3] => 8
+            [4] => 0
+        )
+
+)
+

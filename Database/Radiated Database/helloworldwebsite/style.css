@@ -1,0 +1,187 @@
+#navcontainer
+{
+width: 100%;
+border-right: 1px solid #000;
+padding: 0 0 1em 0;
+margin-bottom: 1em;
+font-family: Verdana, Lucida, Geneva, Helvetica, Arial, sans-serif;
+background-color: #90bade;
+color: #333;
+}
+
+#navcontainer ul
+{
+list-style: none;
+margin: 0;
+padding: 0;
+border: none;
+}
+
+#navcontainer li
+{
+border-bottom: 1px solid #90bade;
+margin: 0;
+}
+
+#navcontainer li b
+{
+border-bottom: 1px solid #90bade;
+margin: 0;
+display: block;
+padding: 5px 5px 5px 2em;
+}
+
+#navcontainer li a
+{
+display: block;
+padding: 5px 5px 5px 5em;
+border-left: 10px solid #444;
+border-right: 10px solid #444;
+background-color: #5d584b;
+color: #fff;
+text-decoration: none;
+width: 100%;
+}
+
+html>body #navcontainer li a { width: auto; }
+
+#navcontainer li a:hover
+{
+border-left: 10px solid #000;
+border-right: 10px solid #000;
+background-color: #646464;
+color: #fff;
+}
+
+/***********************************************************************
+
+#333333
+#36332d
+#454440
+#5d584b
+#646464
+#666666
+
+#2586d7
+
+#1c64d1
+#5ba3e0
+
+************************************************************************
+ new layout */
+body {/*font-size:76%;*/ font-family:Verdana, Lucida, Geneva, Helvetica, Arial, sans-serif; background:#ffffff; word-wrap:break-word;}
+
+#header {background:#36332d;}
+
+#outer1 {float:left; width:15%; background:#e0d0d0;}
+
+#outer2 {float:left; width:70%; background:#c0c0c0;}
+
+#outer3 {float:right; width:15%; background:#b0b0b0;}
+
+#outer1, #outer2, #outer3 {padding-bottom:32767px; margin-bottom:-32767px;}
+
+#wrapper {overflow:hidden; background:#c0c0c0;}
+
+
+#footer {clear:both; background:#455c5a;}
+
+
+
+h1 {font-size:36px; margin:0; padding:10px 0; color:#000;}
+
+h3 {font-size:24px; margin:0; padding:8px 0;}
+
+.content {padding:10px;font-size:14px}
+
+.content h1 {font-size:36px; margin:0; padding:10px 0; color:#f6f6f6;}
+.content h3 {font-size:24px; margin:0; padding:8px 0;color:#f6f6f6;}
+
+
+p {font-size:14px; line-height:1.5em; margin:0; padding:5px 0;}
+
+#footer p,
+
+#header p {color:#fff;}
+
+#footer a {color:#fff;}
+
+#footer a:hover {text-decoration:none;}
+
+
+/************************checkbox************/
+
+.checkbox, .radio {
+  width: 19px;
+  height: 25px;
+  padding: 0 5px 0 0;
+  background: url(checkbox.gif) no-repeat;
+  display: block;
+  clear: left;
+  float: left;
+}
+.radio {
+  background: url(radio.gif) no-repeat;
+}
+.select {
+  position: absolute;
+  width: 158px;
+  height: 21px;
+  padding: 0 24px 0 8px;
+  color: #fff;
+  font: 14px/21px arial,sans-serif;
+  background: url(select.gif) no-repeat;
+  overflow: hidden;
+}
+
+
+
+/********************************horizontal menu******************/
+
+
+#styleswitcher {
+	position: relative;
+	left: 0;
+	top: 0;
+	background-color: #36332D;
+	width: 100%;
+	margin: 0.8em 0 0 0 ;
+}
+#styleswitcher ul {
+	margin: 0;
+	padding: 0 0 0 15%;
+	background-color: #36332D;
+	height: 36px;
+}
+#styleswitcher li {
+	display: block;
+	float: left;
+	list-style-type: none;
+	padding: 5px 1em;
+	height: 32px;
+	border: none;
+	border-left: 1px solid #7D796F;
+	border-right: 1px solid #454440;
+	margin: 0;
+	background: #5D584B;
+}
+
+#styleswitcher li.active {
+	border-bottom: none;
+	font-weight: bold;
+	background: white;
+	height: 32px;
+}
+#styleswitcher a {
+	text-decoration: none;
+	color: white;
+	text-shadow: 0 -1px 1px #000000;
+}
+#styleswitcher li:hover {
+	
+	background-color: #7D796F;
+}
+#styleswitcher li.active a {
+	color: #333;
+	text-shadow: none;
+}

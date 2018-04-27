@@ -1,0 +1,9 @@
+AuthType Basic
+AuthName "This is a private area, please log in, I will change userform soon" 
+
+AuthUserFile "D:\Motorola\Research\CCRadDB\server\ccraddb_password_file.txt"
+AuthGroupFile /dev/null 
+
+<Limit GET POST PUT>
+require valid-user
+</Limit>
